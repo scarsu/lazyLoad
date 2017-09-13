@@ -1,3 +1,7 @@
+var imgs = document.getElementsByTagName("img");
+window.onload = function() {
+    window.onscroll(); //一开始要调用一次以防第一屏有图片
+}
 window.onscroll = function() {
     for (var i = 0; i < imgs.length; i++) {
         //满足scroll + clientHeight >= offsetTop就要加载
